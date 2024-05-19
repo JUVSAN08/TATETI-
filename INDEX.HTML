@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Ta Te Ti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="background-music" src="musica-de-fondo.mp3" loop></audio>
+    <audio id="click-sound" src="sonido-click.mp3"></audio>
+    <audio id="win-sound" src="sonido-ganador.mp3"></audio>
+
+    <div class="container">
+        <h1>Ta Te Ti</h1>
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button class="reset-btn" onclick="resetGame()">Reiniciar Juego</button>
+    </div>
+
+    <div id="winner-popup" class="winner-popup">
+        <div class="popup-content">
+            <span id="winner-message"></span>
+            <button class="close-btn" onclick="closePopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
